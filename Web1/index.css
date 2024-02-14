@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+* {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.image-one-part {
+    background-image: url('./Images/itachi-uchiha-4k-6s-1920x1080.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    float: right;
+    margin: 40px 40px 40px 40px;
+    justify-content: space-between;
+}
+
+a {
+    margin: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+h1 {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.logo {
+    margin: 10px 40px 40px 40px;
+    width: 5rem;
+}
+
+.toggle_buttn {
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper .first-text {
+    font-size: 60px;
+    color: #fff;
+}
+
+.wrapper .sec-texts {
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.sec-texts li {
+    position: relative;
+    top: 0;
+    font-size: 60px;
+    color: #0ef;
+    list-style: none;
+    padding: 0 20px;
+    text-shadow: 0 0 10px #0ef;
+    animation: slide 12s steps(4) infinite, colorful 6s infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+@keyframes colorful {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.sec-texts li span {
+    position: relative;
+}
+
+.sec-texts li span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 400px;
+    height: 90px;
+    background: #000;
+    border-left: 2px solid #0ef;
+    animation: typing 1.5s steps(10) infinite alternate;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
